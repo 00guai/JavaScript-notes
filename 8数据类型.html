@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据类型</title>
+</head>
+<body>
+    
+
+    <script>
+        // 1.基本类型
+        /*
+        1.Number 整形5 浮点型2.5 2e3(2*10^3)科学计数法 十六进制 八进制 二进制 Nan(not a number)
+        2.String 字符串类型
+        3.Boolean
+        4.Undefined
+        5.Null
+        6.Symbol
+        */
+
+        // 2.复杂类型（对象类型）
+
+        var a=0xff
+        var b=077
+        var c=0b11
+
+        console.log(a)
+
+        var num1=10
+        var num2="20"
+        // 字符仍然为原数，直接拼接其后
+        console.log(num1+num2)
+        // 类型转换  number——>String
+
+        var str='hellow'
+        console.log(str)
+        // 字符型颜色为黑色
+
+        var ischecked = true
+        // true 是布尔类型
+        console.log(ischecked)
+        
+        var which
+        console.log(which)
+        // 未赋值，所以为undefined类型
+
+        var whichObject=null
+        whichObject ={name:"dear"}
+        console.log(whichObject)
+        // 对象类型
+    </script>
+</body>
+</html>
