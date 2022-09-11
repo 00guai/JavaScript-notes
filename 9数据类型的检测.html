@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据类型的检测</title>
+</head>
+<body>
+    
+    <script>
+        var a=100
+        console.log(typeof a)
+        // typeof是检测数据类型的语法
+
+        console.log(typeof typeof a)
+        // typeof a是number,也是字符串
+
+        console.log(typeof a + 100)
+        console.log(typeof (a+100))
+        // 两者的区别：
+        // 第一个是拼接
+        // 第二个是数据类型的检测
+
+        var b=null
+        console.log(typeof b)
+        // null为对象，即布尔类型
+    </script>
+</body>
+</html>
