@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>转换值</title>
+</head>
+<body>
+   
+    <script>
+        var a = "abc"
+        var b = Number(a)
+        // (value?: any) => number 转化为数字   but a 不是数字即Nan
+        console.log(a,b)
+        console.log(typeof a,typeof b)
+        // string number
+
+        var a = true
+        var b = Number(a)
+        console.log(a,b)
+        console.log(typeof a,typeof b)
+
+        var a = false
+        var b = Number(a)
+        console.log(a,b)
+        console.log(typeof a,typeof b)
+
+        var a = "123abc"
+        var b = Number(a)
+        console.log(a,b)
+        console.log(typeof a,typeof b)
+
+        var a = "123.56abc"
+        var b = parseInt(a)
+        // 只输出整形int
+        console.log(a,b)
+
+        var a = "123.56abc"
+        var b = parseFloat(a)
+        // 输出整形int也可输出浮点型float
+        console.log(a,b)
+    </script>
+    
+</body>
+</html>
