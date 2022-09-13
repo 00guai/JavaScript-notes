@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赋值运算符</title>
+    <script>
+// 1. `=`
+
+// > 就是把 `=` 右边的赋值给等号左边的变量名
+// >
+// > `var num = 100`
+// >
+// > 就是把 100 赋值给 num 变量
+// >
+// > 那么 num 变量的值就是 100
+// 2. `+=`
+
+//    > ```javascript
+//    > var a = 10;
+//    > a += 10;
+//    > console.log(a); //=> 20
+//    > ```
+//    >
+//    > `a += 10` 等价于 `a = a + 10`
+
+// 3. `-=`
+
+//    > var a = 10;
+//    > ```javascript
+//    > a -= 10;
+//    > console.log(a); //=> 0
+//    > ```
+//    >
+//    > `a -= 10` 等价于 `a = a - 10`
+
+// 4. `*=`
+
+//    > ```javascript
+//    > var a = 10;
+//    > a *= 10;
+//    > console.log(a); //=> 100
+//    > ```
+//    >
+//    > `a *= 10` 等价于 `a = a * 10`
+
+// 5. `/+`
+
+//    > ```javascript
+//    > var a = 10;
+//    > a /= 10;
+//    > console.log(a); //=> 1
+//    > ```
+//    >
+//    > `a /= 10` 等价于 `a = a / 10`
+
+// 6. `%=`
+
+//    > ```javascript
+//    > var a = 10;
+//    > a %= 10;
+//    > console.log(a); //=> 0
+//    > ```
+//    >
+//    > `a %= 10` 等价于 `a = a % 10`
+
+        // 交换两个数
+        var a = 10
+        var b = 9
+
+        var c
+
+        c = a
+        a = b
+        b = c
+
+        console.log(a,b)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
