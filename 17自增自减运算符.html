@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自增自减运算符</title>
+    <script>
+// 1. `++`
+
+// - 进行自增运算
+
+// - 分成两种，**前置++** 和 **后置++**
+
+// - 前置++，会先把值自动 +1，在返回
+
+//   ```javascript
+//   var a = 10;
+//   console.log(++a);
+//   // 会返回 11，并且把 a 的值变成 11
+//   ```
+
+// - 后置++，会先把值返回，在自动+1
+
+//   ```javascript
+//   var a = 10;
+//   console.log(a++);
+//   // 会返回 10，然后把 a 的值变成 11
+//   ```
+
+// 2. `--`
+
+// - 进行自减运算
+// - 分成两种，**前置--** 和 **后置--**
+// - 和 `++` 运算符道理一样
+
+        var n = 10
+        var res = ++n + n++ + ++n
+        console.log(n,res)
+        // n一共自加加了三下  （11 + 11）+1 +12
+
+        var m = 10
+        var res = m++ + --m + m-- + ++m
+        console.log(m,res)
+        // m一共自加加两下，自减减两下 11+9+9-1+12
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
