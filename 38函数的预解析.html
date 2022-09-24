@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数的预解析</title>
+    <script>
+        console.log(name)
+
+        var name = "小李"
+        // 声明可提前，所以不报错
+        console.log(name)
+
+        // 赋值型函数
+        // test()
+        // var x = function test(){
+        //     console.log("成功")
+        // }
+        // test()
+        // 为了防止出错，注释掉
+
+        // 声明式函数
+        test()
+        function test(){
+            console.log("成功")
+        }
+        test()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
