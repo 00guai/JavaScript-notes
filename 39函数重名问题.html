@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数重名问题</title>
+</head>
+<body>
+    <script>
+        function test() {
+            console.log("小李")
+        }
+        function test() {
+            console.log("小王")
+        }
+
+        console.log(test())
+        // 函数会选择最下面的一个即 最新的一个
+
+        var age = 10
+
+        function age(){
+            console.log("age is 20")
+        }
+
+        // age()
+        // 因为声明调到最前面，所以认为 没有age函数
+
+        console.log(age)
+    </script>
+
+    <script>
+        function age(){
+            console.log("age is 30")
+        }
+        age()
+        // 没有替换，说明不同的script，无法在一起比较
+    </script>
+
+    <script>
+        function add(a,b){
+            a = parseInt(a)
+            b = parseInt(b)
+            var res = a+b
+            console.log(a+b) 
+        }
+
+        add(1.2)
+
+    </script>
+</body>
+</html>
