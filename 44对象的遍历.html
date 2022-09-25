@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对象的遍历</title>
+    <script>
+        var obj={
+            name:"小李",
+            age:20,
+            location:"四川",
+            // 再增加
+            // weight:180
+        }
+
+        // document.write("name:"+obj.name)
+        // document.write("<br>")
+        // document.write("age:"+obj.age)
+        // document.write("<br>")
+        // document.write("location:"+obj.location)
+        // document.write("<br>")
+        // 操作麻烦
+
+        // 定义i在obj对象中
+        for(var i in obj){
+            // 得到对应的key
+            // console.log(i)
+            // 得到对应value
+            console.log(obj[i])
+
+            document.write(i+" : "+obj[i])
+            document.write("<br>")
+
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
