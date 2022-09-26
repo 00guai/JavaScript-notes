@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不同数据类型的存储</title>
+    <script>
+        var obj={
+            name:"小李",
+            agr:18
+        }
+
+        var obj2 = obj
+        console.log(obj2===obj)
+
+        obj.name="小张"
+        console.log(obj,obj2)
+        // 结果都变成了小张?
+
+        var obj3={name:"小郭"}
+        var obj4={name:"小郭"}
+        console.log(obj3===obj4)
+        // 两个地址不同,就算存相同的东西
+
+        // 复制
+        var obj5 ={}
+        for(var i in obj){
+            obj5[i]=obj[i]
+        }
+        // obj.name="小王"
+        console.log(obj,obj5)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
