@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组的基本操作</title>
+    <script>
+        var arr=[1,2,3,4,5]
+        console.log(arr.length)
+        // 数组的长度
+
+        // 打印出多少位的数组
+        arr.length=3
+        console.log(arr)
+
+        // 清空数组
+        arr.length=0
+        console.log(arr)
+
+        // 索引
+        var arr2=["xiaozhang","xiaohua","xiaoda"]
+        console.log(arr[0],arr[1],arr[2])
+        
+        // 遍历
+        var arr3=[3,4,5,6,7,8]
+        for(var i=0;i<arr3.length;i++){
+            console.log(arr3[i])
+        }
+
+        // 复制
+        var arr4=[]
+        for(var i=0;i<arr3.length;i++){
+            arr4[i] = arr3[i] 
+        }
+        console.log(arr4)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
