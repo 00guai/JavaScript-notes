@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组的常用方法</title><script>
+        // 不影响原数组的方法
+        // concat 拼接
+        let arr1=[1,2,3]
+        let arr2=[6,7,3]
+        let arr3=arr1.concat(arr2,55)
+        // 拼接还可以加一些数据，如55
+        console.log(arr1,arr2,arr3)
+
+        // join 添加字符串
+        let arr=[35,67,89,09,00]
+        document.write(arr.join("|"))
+        // 网站中添加无序点
+        let arr4=[35,67,89,09,00]
+        for(let i=0;i<5;i++){
+            arr4.push("<li>"+i+"</li>")
+        }
+        document.write(arr4.join(""))
+
+        // slice 截取
+        let arr5=["acs","cf","kfc","bbp","dd"]
+        let arr6=arr5.slice(0,2)
+        // 0到2但不包含2
+        console.log(arr6)
+
+        // indexof
+        let arr7=["xiaowang","xiaoli","xiaozhang","xiaosang","xiaowang"]
+        let res=arr7.indexOf("xiaosang")
+        let res2=arr7.indexOf("xiaowang",2)
+        console.log(res,res2)
+        // 从2开始查找
+        let res3=arr7.indexOf("xiaoguo")
+        console.log(res3)
+        // 查找不到，返回-1
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
