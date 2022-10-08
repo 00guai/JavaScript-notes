@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组的常用方法</title>
+    <script>
+        var arr=[1,2,3]
+
+        // push 数组后面追加元素
+        // 返回值 长度
+        arr.push(4)
+        console.log(arr)
+        console.log("返回值",arr.push(4))
+        // 会再追加一个元素
+
+        // pop 从后面删除元素
+        // 返回值删除元素
+        var respop=arr.pop()
+        console.log(arr)
+        console.log("返回值",respop)
+        // 少一个pop，所以没有删除两个
+
+        // unshift 前面追加元素
+        // 返回值 长度
+        var resunshift = arr.unshift("小李")
+        console.log(arr)
+        console.log("返回值",resunshift)
+
+        // shift 前面删除元素
+        // 返回值 删除的这个元素
+        var resshift = arr.shift()
+        console.log(arr)
+        console.log("返回值",resshift)
+
+        // splice 删除从几号开始的几位
+        var ressplice=arr.splice(1,2)
+        console.log(arr)
+        console.log("返回值",ressplice)
+
+        // splice 追加在1的 前面 删除0个开始追加
+        var ressplice=arr.splice(1,0,8,"9")
+        console.log(arr)
+        console.log("返回值",ressplice)
+
+        // reverse 倒序
+        var arr5=[1,2,3,4,5]
+        arr.reverse()
+        console.log(arr5)
+
+        // sort 排序
+        arr4=[52,65,89,555]
+        arr4.sort(function(a,b){
+            // return b-a
+            // 从大到小
+            return a-b
+            // 从小到大
+        })
+        console.log(arr4)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
