@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组去重</title><script>
+        // 设置两个数组，若其中一个数组不存在该数字，则放进去
+        let  arr=[1,2,3,4,5,12,3,4,0]
+        let arr2=[]
+        for(let i =0;i<arr.length;i++){
+            if(arr2.indexOf(arr[i])===-1){
+                arr2.push(arr[i])
+            }
+        }
+        console.log(arr,arr2)
+
+        // 对象覆盖法
+        let obj={}
+        for(let i=0;i<arr.length;i++){
+            obj[arr[i]]="随便"
+        }
+        console.log(obj)
+        let arr3=[]
+        for(let i in obj){
+            arr3.push(Number(i))
+        }
+        console.log(arr3)
+
+        // set 法
+        let set=new Set(arr)
+        console.log(set)
+        let arr4 = Array.from(set)
+        console.log(arr4)
+    </script>
+</head>
+<body>
+    
+</body>
+</html> 
