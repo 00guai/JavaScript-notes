@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组的常用方法</title>
+    <script>
+        // foreach遍历
+        let arr=["a","b","c","g"]
+        // 回调函数
+        arr.forEach(function(item,index){   
+            console.log(item,index)
+        })
+
+        // 映射
+        let arr2=[1,2,3,4,5]
+        // 通过映射让所有值平方
+        let arr3= arr2.map(function(item){
+            return item*item*item
+        })
+        console.log(arr3)
+
+        let arr4=["xiaozhang","xiaowang","xiaohe"]
+        let arr5= arr4.map(function(item){
+            return "<li>"+item+"</li>"
+        })
+
+        console.log(arr4,arr5)
+        document.write(arr5.join(""))
+
+        // filter 过滤
+        let arr6=[{
+                name:"xiaowang",
+                price:10
+            },{
+                name:"xiaohua",
+                price:50
+            },{
+                name:"xiaoguasd",
+                price:500
+            }]
+        let arr7= arr6.filter(function(item){
+            // 过滤小于50的数字
+            // return item>=50
+            return item.price>400
+            
+        })
+        console.log(arr7)
+
+        // every 每一个满足才是 TRUE
+        let arr8=[5,45,23,78]
+        let arr9=arr8.every(function(item){
+            return item>10
+        })
+        console.log(arr9)
+
+        // some 只要一个满足就是TRUE
+        let arr10=arr8.some(function(item){
+            return item>10
+        })
+        console.log(arr10)
+
+        // find 寻找一个含有该条件的
+        // filter 过滤多少都行
+        let arr11=arr6.find(function(item){
+            return item.price===500
+        })
+        console.log(arr11)
+
+        // reduce 叠加
+        let arr12=arr8.reduce(function(prev,item){
+            return prev+item
+        },0)
+        console.log(arr12)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
