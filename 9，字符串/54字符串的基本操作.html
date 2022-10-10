@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字符串的基本操作</title>
+    <script>
+        let str1="hellow"
+        console.log(str1+"world")
+
+        // length 只能读取
+        str1.length=0
+        console.log(str1)
+
+        // 索引 即下标
+        console.log(str1[1])
+        str1[1]="a"
+        console.log(str1)
+
+        // 遍历
+        for(let i =0;i<str1.length;i++){
+            console.log(i,str1[i])
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
