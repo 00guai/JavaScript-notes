@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字符串常用方法</title>
+    <script>
+        // chartat(索引)返回索引
+        let str1 ="xiaoming"
+        let str2=str1.charAt(10)
+        console.log(str1,str2)
+
+        // 大小写
+        let str3="linda"
+        console.log(str3.toUpperCase())
+        console.log(str3.toLowerCase())
+
+        // 截取 substr(开始索引，长度) substring(开始索引，结束索引) slice(开始索引，结束索引)
+        let str4=str3.substr(0,2)
+        let str5=str3.substring(1,4)
+        let str6=str3.substring(0)
+        let str7=str3.slice(1,3)
+        let str8=str3.slice(1)
+        console.log(str4,str5,str6,str7,str8)
+
+        // 首字母大写
+        console.log(str3.substring(0,1).toUpperCase()+str3.substring(1))
+
+        // replace 只能替换一个字母   
+        str9=str1.replace("i","*")
+        console.log(str9)
+
+        // indexof  查找
+        let str10=str1.indexOf("a")
+        console.log(str10)
+        console.log(str1.indexOf("a",5))
+
+        // concat  连接字符 
+        let str11=str3.concat("!!!")
+        console.log(str11)
+
+        // trim 去掉首尾空格
+        // trimleft() trimstart()  去掉首空格
+        // trimright() trimend()   去掉尾空格
+        let str12="  Hi!!!,  "
+        console.log(str12.trim(),str12.trimRight())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
