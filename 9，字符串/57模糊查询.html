@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模糊查询</title>
+    <script>
+        // 根据关键词查出 相关内容
+        arr=["动作","动态","xiaowang","小张","动漫","huahua"]
+
+        let input=prompt("请输入要查找的内容：")
+        let res=arr.filter(function(item){
+            return item.indexOf(input)>-1
+        })
+        document.write(res)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
