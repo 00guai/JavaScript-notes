@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json格式字符串</title><script>
+        // 将对象转化为字符串，方便传给后端
+        let str='{"name":"xiaozhang","age":18}'
+        console.log(str)
+         
+        // 后端=》前端  字符串变成代码
+        let obj=JSON.parse(str)
+        console.log(obj)
+
+        // 前端=》后端
+        let obj1={"name":"xiaoli"}
+        let str3=JSON.stringify(obj1)
+        console.log(obj1,str3)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
