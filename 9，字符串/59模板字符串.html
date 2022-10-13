@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板字符串</title><script>
+        // es6  ``  反引号
+        // 回车后无法正常运行，可使用
+        let myhtml=`<li>jaja</li>
+            <li>adawd</li>
+            <li>acja</li>`
+            document.write(myhtml)
+        // 无反引号会报错   
+
+        // 反引号才可识别  ${} - 特殊标记
+        let name="xiaodada"
+        let str="my name is ${name}"
+        let str2=`my name is ${name} ${10+80} ${10>20?"xiaowang":"xiaoli"}`
+        document.write(str+"</br>"+str2)
+
+        // 改用反引号和${} 同样好用
+        let arr4=["xiaozhang","xiaowang","xiaohe"]
+        let arr5= arr4.map(function(item){
+            return `<li>${item}</li>`
+        })
+        console.log(arr4,arr5)
+        document.write(arr5.join(""))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
