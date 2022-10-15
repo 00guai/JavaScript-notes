@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机整数</title><script>
+        // 0~10  不包含10
+        let res=Math.floor(Math.random()*10)
+        console.log(res)
+
+        // 0~10  包含10
+        let res2=Math.floor(Math.random()*10+1)
+        console.log(res2)
+
+        // 函数  min 到 max 之间的随机数
+        function getRnd(min,max){
+            if(min>max){
+                console.log("参数有误")
+                return
+            }
+            return Math.floor(Math.random()*(max-min))+min
+        }
+        console.log(getRnd(50,800))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
