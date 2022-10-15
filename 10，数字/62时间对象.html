@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>时间对象</title>
+    <script>
+        // 表达现在时间
+        let date=new Date()
+        console.log(date)
+
+        // 表达时间无效
+        let date1=new Date(10000)
+        console.log(date1)
+
+        // 表达时间有效  月份同数组形式  8即9月
+        let date2 = new Date(2022,8,7)
+        console.log(date2)
+
+        // 通过 - 连接字符 直接9就是9月
+        let date3=new Date("2022-9-7 10:10:10")
+        console.log(date3)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
