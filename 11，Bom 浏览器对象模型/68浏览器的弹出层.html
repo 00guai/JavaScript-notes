@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浏览器的弹出层</title>
+</head>
+<body>
+    <button id="btn">别点击</button>
+    <button id="btn1">别点击</button>
+    <button id="btn2">别点击</button>
+    <button id="btn3">别点击</button>
+    <script>
+        // 不延时
+        btn.onclick = function(){
+            alert("用户密码不匹配")
+        }
+
+        // 延时一下
+        btn1.onclick= function()
+        {setTimeout(function(){
+            alert("延时2s成功")
+        },2000)
+    }
+
+    // 询问框
+    btn2.onclick= function(){
+        let res2=confirm("你点我干嘛")
+        console.log(res2)
+        if(res2){
+
+        }else{
+
+        }
+    }
+
+    btn3.onclick=function(){
+        let res3=prompt("你很欠哦")
+        console.log(res3)
+    }
+    </script>
+</body>
+</html>
