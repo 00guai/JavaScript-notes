@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浏览器地址</title>
+</head>
+<body>
+    <button id="btn">跳转</button>
+    <button id="btn2">刷新</button>
+    <script>
+        // 查网站地址
+        console.log(location.href)
+        btn.onclick=function(){
+            location.href = "http://www.baidu.com"
+        }
+
+        // 刷新网址
+        btn2.onclick=function(){
+            location.reload()
+        }
+    </script>
+</body>
+</html>
