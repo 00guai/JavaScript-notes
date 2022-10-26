@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浏览器打开标签网页</title>
+</head>
+<body>
+
+    <button id="btn1">打开新标签页</button>
+    <button id="btn2">关闭页面</button>
+    <script>
+
+        // 打开指定页面
+        btn1.onclick=function(){
+            window.open("https://www.baidu.com")
+
+        }
+
+        // 关掉自己
+        btn2.onclick=function(){
+            window.close()
+        }
+    </script>
+</body>
+</html>
