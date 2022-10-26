@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浏览器滚动距离</title>
+    <style>
+        body{
+            height:20000px;
+        }
+
+        #btn{
+            color: red;
+            position: fixed;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- 搞个盒子,把按钮顶下去 -->
+    
+    <button id="btn">回到顶部</button>
+    <script>
+        console.log(document.documentElement.scrollTop)
+        window.onscroll=function(){
+            // 当低版本浏览器不支持doctype html 会显示不出来
+            console.log(document.documentElement.scrollTop)
+
+            // 兼容性
+            // 所以换一种方法  当一种失效换另一种 以body为核心的
+            console.log(document.documentElement.scrollTop||document.body.scrollTop)
+        }
+
+        if((document.documentElement.scrollTop||document.body.scrollTop) > 1000){
+            console.log("显示回到顶部按钮")
+        }else{
+            console.log("隐藏回到顶部按钮")
+        }
+
+        btn.onclick=function(){
+            // 返回到什么位置 x y
+            // window.scrollTo(20,0)
+            window.scrollTo({
+                left:0,
+                top:0
+            })
+        }
+    </script>
+</body>
+</html>
