@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浏览本地存储</title>
+</head>
+<body>
+    <button id="btn">存</button>
+    <button id="btn2">取</button>
+    <button id="btn3">删</button>
+    <button id="btn4">clear</button>
+    <button id="btn5">存</button>
+    <button id="btn6">取</button>
+    <button id="btn7">删</button>
+    <button id="btn8">clear</button>
+    <script>
+        // localStorage  永久存储，
+        // sessionStorage 临时存储，关闭页面就消失
+
+        btn.onclick=function(){
+            // 存，只能存字符串，不能存对象
+            // localStorage.setItem("age","200")
+
+            localStorage.setItem("obj",JSON.stringify({
+                name:"xiaoli",
+                age:100
+            }))
+        }
+
+        // 取
+        btn2.onclick=function(){
+            console.log(localStorage.getItem("obj"))
+        }
+
+        // 删
+        btn3.onclick=function(){
+            localStorage.removeItem("obj")
+        }
+
+        // 清空
+        btn4.onclick=function(){
+            localStorage.clear()
+        }
+
+        // *******************************************
+        btn5.onclick=function(){
+            // 存，只能存字符串，不能存对象
+            // localStorage.setItem("age","200")
+
+            sessionStorage.setItem("obj",JSON.stringify({
+                name:"xiaoli",
+                age:100
+            }))
+        }
+
+        // 取
+        btn6.onclick=function(){
+            console.log(sessionStorage.getItem("obj"))
+        }
+
+        // 删
+        btn7.onclick=function(){
+            sessionStorage.removeItem("obj")
+        }
+
+        // 清空
+        btn8.onclick=function(){
+            sessionStorage.clear()
+        }
+    </script>
+</body>
+</html>
